@@ -54,7 +54,7 @@ export default function Faqs() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="bg-linear-to-r text-6xl font-black text-blue-600 pb-4">
+          className="bg-linear-to-r md:text-5xl text-3xl font-semibold text-[#2474c3] pb-4">
           Preguntas Frecuentes
         </motion.h2>
 
@@ -112,11 +112,11 @@ export default function Faqs() {
       {/* CTA */}
       <div className="relative z-10 flex justify-center mt-16">
         <motion.a
-          href="https://wa.me/51972153751?text=Hola!%20gorditodelmal%20Quisiera%20más%20información%20sobre%20tus%20servicios."
+           href="https://wa.me/51972153751?text=Hola%20Humberto,%20quisiera%20más%20información%20sobre%20tus%20trabajos"
           target="_blank"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-        className="mt-8 inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition-all" >
+        className="mt-8 inline-flex text-xl items-center gap-3 bg-green-500 hover:bg-green-600 text-white font-semibold px-8 py-5 rounded-full shadow-lg transition-all" >
         
           <MessageCircle className="w-5 h-5" />
           Escríbeme por WhatsApp

@@ -43,11 +43,11 @@ export default function CertificationsChef() {
       id="certificaciones"
       className="w-full bg-gray-100 py-20 md:py-28 relative overflow-hidden"
     >
-      <div className="max-w-6xl mx-auto px-6 md:px-10">
+      <div className="max-w-7xl md:mx-auto mx-6">
 
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto">
-          <div className="w-16 h-1 bg-blue-600 mx-auto mb-6 rounded-full" />
+        <div className="md:text-center max-w-2xl mx-auto">
+          <div className="w-16 h-1 bg-[#2474c3] md:mx-auto mb-6 rounded-full" />
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
             Certificaciones & Formación
           </h2>

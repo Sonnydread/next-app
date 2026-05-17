@@ -5,12 +5,12 @@ import Image from "next/image"
 
 export default function ChefHero() {
   return (
-    <section className="relative flex min-h-screen w-full items-center overflow-hidden bg-gray-100">
+    <section id="perfil" className="relative flex min-h-screen md:pt-20 pt-34 w-full items-center overflow-hidden bg-gray-100">
       {/* 🔵 Background */}
       <div className="absolute top-0 right-0 -z-10 h-[500px] w-[500px] rounded-full bg-blue-600/10 blur-3xl" />
       <div className="absolute bottom-0 left-0 -z-10 h-[400px] w-[400px] rounded-full bg-blue-400/10 blur-3xl" />
 
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 md:grid-cols-2 md:px-10">
+      <div className="md:mx-auto mx-6 grid max-w-7xl items-center md:gap-40 gap-14 md:grid-cols-2">
         {/* 🧑‍🍳 Texto */}
         <motion.div
           initial={{ opacity: 0, y: 40, filter: "blur(8px)" }}
@@ -20,24 +20,23 @@ export default function ChefHero() {
         >
           {/* 🔥 LOGO (bien posicionado) */}
           <div className="mb-6 flex items-center">
-            <video
-              src="/vid/loggo.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="h-16 w-16 rounded-2xl object-contain md:h-38 md:w-38"
+            <Image
+              src="/img/logblue.png"
+              alt="Logo black"
+              width={90}
+              height={28}
+              className="object-contain"
             />
           </div>
 
           {/* Línea */}
-          <div className="mb-6 h-1 w-38 rounded-full bg-blue-600" />
+          <div className="mb-6 h-1 w-38 rounded-full bg-[#458bd1]" />
 
           <h1 className="text-4xl leading-tight font-bold text-gray-900 md:text-6xl">
-            Humberto <span className="text-blue-600">Galarza</span>
+            Humberto <span className="text-[#2474c3]">Galarza</span>
           </h1>
 
-          <h2 className="mt-3 text-xl leading-snug font-semibold text-blue-600 md:text-2xl">
+          <h2 className="mt-3 text-xl leading-snug font-semibold text-[#2474c3] md:text-2xl">
             Chef Ejecutivo <br />
             Aperturas y estandarización <br />
             Latinoamérica y el Caribe
@@ -53,23 +52,23 @@ export default function ChefHero() {
               href="#certificaciones"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.97 }}
-              className="rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white shadow-md transition hover:bg-blue-700"
+              className="rounded-lg bg-[#2474c3] px-6 py-3 font-semibold text-white shadow-md transition"
             >
               Ver certificaciones
             </motion.a>
-  <a
-          href="https://wa.me/51972153751?text=Hola!%20gorditodelmal%20Quisiera%20más%20información%20sobre%20tus%20servicios."
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.97 }}
-              className="rounded-lg border border-blue-600 px-6 py-3 font-semibold text-blue-600 transition hover:bg-blue-50"
+            <a
+              href="https://wa.me/51972153751?text=Hola%20Humberto,%20quisiera%20más%20información%20sobre%20tus%20trabajos"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Contáctame
-            </motion.button>
-</a>
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.97 }}
+                className="rounded-lg border border-blue-600 px-6 py-3 font-semibold text-[#2474c3] transition hover:bg-blue-50"
+              >
+                Contáctame
+              </motion.button>
+            </a>
           </div>
         </motion.div>
         {/* 📸 Imagen */}
@@ -90,7 +89,7 @@ export default function ChefHero() {
           </div>
 
           {/* Marco */}
-          <div className="absolute -right-6 -bottom-6 -z-10 h-full w-full rounded-2xl border-2 border-blue-600" />
+          <div className="absolute md:block hidden -right-6 -bottom-6 -z-10 h-full w-full rounded-2xl border-2 border-[#2474c3]" />
         </motion.div>
       </div>
     </section>

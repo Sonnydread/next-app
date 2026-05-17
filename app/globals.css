@@ -137,5 +137,7 @@
     overscroll-behavior: none;
     overscroll-behavior-x: none;
     overscroll-behavior-y: none;
+
+       scroll-behavior: smooth;
     }
 }
